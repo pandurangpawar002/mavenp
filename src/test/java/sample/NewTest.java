@@ -12,9 +12,10 @@ public class NewTest {
 	 WebDriver driver;		
 	@Test				
 	public void testEasy() {	
-		driver.get("http://demo.guru99.com/test/guru99home/");  
-		String title = driver.getTitle();				 
-		Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
+		//driver.get("http://demo.guru99.com/test/guru99home/"); 
+		driver.get("https://www.youtube.com/watch?v=w4ClQO0FFQg&ab_channel=SonyMusicIndia");
+		//String title = driver.getTitle();				 
+		//Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
 	}	
 	@BeforeTest
 	public void beforeTest() {	
@@ -25,6 +26,6 @@ public class NewTest {
 	}		
 	@AfterTest
 	public void afterTest() {
-		driver.quit();			
+		//driver.quit();			
 	}		
 }	
