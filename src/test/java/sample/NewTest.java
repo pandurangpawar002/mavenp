@@ -20,10 +20,10 @@ public class NewTest {
 	public void beforeTest() {	
 		System.setProperty("webdriver.chrome.driver",
 				"D:\\Atomation\\Selenium jars and drivers\\Chrome 96\\chromedriver.exe");
-		//ChromeOptions options = new ChromeOptions();
-		//options.addArguments("user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data");
-		//options.addArguments("--start-maximized");
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+	        options.addArguments("user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data");
+		options.addArguments("--start-maximized");
+		driver = new ChromeDriver(options);
 	}		
 	@AfterTest
 	public void afterTest() {
