@@ -6,5 +6,7 @@
       <class name="sample.NewTest"/>
     </classes>  
     
+    
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->
