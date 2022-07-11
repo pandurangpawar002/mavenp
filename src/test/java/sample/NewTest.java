@@ -12,17 +12,18 @@ public class NewTest {
 	 WebDriver driver;		
 	@Test				
 	public void testEasy() {	
-		//driver.get("http://demo.guru99.com/test/guru99home/"); 
-		driver.get("https://www.youtube.com/watch?v=w4ClQO0FFQg&ab_channel=SonyMusicIndia");
-		//String title = driver.getTitle();				 
-		//Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
+		driver.get("https://www.youtube.com/watch?v=w4ClQO0FFQg&ab_channel=SonyMusicIndia");  
+		
+		driver.manage().window().maximize(); 		
 	}	
 	@BeforeTest
 	public void beforeTest() {	
 		System.setProperty("webdriver.chrome.driver",
 				"D:\\Atomation\\Selenium jars and drivers\\Chrome 96\\chromedriver.exe");
-		
-		 driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data");
+		options.addArguments("--start-maximized");
+		driver = new ChromeDriver(options);
 	}		
 	@AfterTest
 	public void afterTest() {
