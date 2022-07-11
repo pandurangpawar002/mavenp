@@ -23,7 +23,7 @@ public class NewTest {
 				"D:\\Atomation\\Selenium jars and drivers\\Chrome 96\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 	        options.addArguments("user-data-dir=C:\\Users\\admin\\AppData\\Local\\Google\\Chrome\\User Data");
-		options.addArguments("--start-maximized");
+		//options.addArguments("--start-maximized");
 		driver = new ChromeDriver(options);
 	}		
 	@AfterTest
